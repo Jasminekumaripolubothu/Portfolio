@@ -65,14 +65,15 @@ section#home {
 
 .home-content {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }
 
 .intro {
-    padding-right: 350px;
-    max-width: 50%;
+    padding-right: 50px; /* Reduced padding to balance space */
+    max-width: 45%; /* Adjusted width to accommodate image */
+    box-sizing: border-box; /* Include padding in width calculation */
 }
 
 .intro h1 {
@@ -124,20 +125,23 @@ section#home {
 }
 
 .intro-img {
-    max-width: 50%;
+    max-width: 100%; /* Adjusted width to match intro text */
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-right: 20px;
+    box-sizing: border-box; /* Include padding in width calculation */
 }
 
 .intro-img img {
-    width: 300px;
-    height: 380px;
+    width: 90%; /* Ensure image scales with its container */
+    height: auto; /* Maintain aspect ratio */
     border-radius: 50%;
-    box-shadow: 0 8px 15px #FF00E5;
-    margin-left: -100px;
+    box-shadow: 0 8px 24px #FF00E5;
+    max-width: 300px; /* Max width for the image */
+    margin-left: -20px; /* Adjust margin to better position the image */
+    box-sizing: border-box; /* Include padding in box size */
 }
+
 
 .about-section {
     text-align: center;
