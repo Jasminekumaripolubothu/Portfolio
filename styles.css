@@ -1,0 +1,313 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #2F0852;
+    color: #fff;
+    padding-top: 80px; /* Adjust this value if needed */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+html {
+    scroll-padding-top: 20px; /* Adjust this value to the height of your fixed header */
+}
+header {
+    position: fixed; /* Fixes the header to the top of the page */
+    top: 0;
+    left: 0;
+    width: 100%; /* Makes the header full-width */
+    background: #2F0852;
+    padding: 20px 0;
+    z-index: 1000; /* Ensures the header stays on top of other content */
+}
+
+header .logo {
+    float: left;
+    font-size: 38px;
+    font-weight: bold;
+    color: #FF00E5;
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 15px 0;
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 60px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+section {
+    padding: 100px 0;
+    position: relative; /* Ensure section positioning is not affecting the layout */
+}
+section#home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.intro {
+    padding-right: 350px;
+    max-width: 50%;
+}
+
+.intro h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.intro h2 {
+    font-size: 48px;
+    margin: 10px 0;
+}
+
+.intro h3 {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.highlight {
+    color: #FF00E5;
+}
+
+.intro p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.social-icons {
+    margin: 20px 0;
+}
+
+.social-icons img {
+    width: 30px;
+    margin-right: 10px;
+    filter: invert(41%) sepia(100%) saturate(7283%) hue-rotate(300deg) brightness(102%) contrast(106%);
+    transition: filter 0.3s ease;
+}
+
+.social-icons img:hover {
+    filter: grayscale(100%) brightness(0) invert(1);
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FF00E5;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.intro-img {
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.intro-img img {
+    width: 300px;
+    height: 380px;
+    border-radius: 50%;
+    box-shadow: 0 8px 15px #FF00E5;
+    margin-left: -100px;
+}
+
+.about-section {
+    text-align: center;
+}
+
+.about-section h2{
+    font-size: 30px;
+}
+
+.about-section p{
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+#skills h2{
+    text-align: center;
+    font-size: 30px ;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.skill {
+    background: #6B20AD;
+    padding: 30px; /* Adjust padding to fit larger images */
+    border-radius: 10px;
+    text-align: center;
+    /* You can also set a minimum height if necessary */
+    min-height: 100px; /* Adjust this value as needed */
+    
+}
+
+.skill img {
+    width: 80px; /* Increase the size of the logos */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px;
+}
+
+#projects h2{
+    text-align: center;
+    font-size: 30px ;
+}
+
+.project h3{
+    font-size: 18px;
+}
+.project p{
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.project {
+    background: #6B20AD;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.project img {
+    max-width: 50%;
+    border-radius: 40px;
+    border-color: #fff;
+}
+
+#contact h2{
+    text-align: center;
+    font-size: 30px ;
+}
+
+.contact-info {
+    text-align: center;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    margin: 10px 0;
+}
+
+.contact-info a {
+    color: #FF00E5;
+    text-decoration: none;
+}
+
+.contact-form {
+    margin-top: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #D2A0FE;
+}
+
+/* General styling for form fields */
+.contact-form input, .contact-form textarea {
+    color: #D2A0FE; /* Text color inside input fields */
+    background-color: #501188; /* Background color for input fields */
+    border: 1px solid #491577; /* Border color for input fields */
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Focus styles */
+.contact-form input:focus, .contact-form textarea:focus {
+    border-color: #FF00E5; /* Border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Specific styling for 'Your Message' field */
+.contact-form .form-group:nth-child(3) {
+    display: block; /* Ensure it's a block element */
+}
+
+/* Adjust label and textarea within the 'Your Message' form-group */
+.contact-form .form-group:nth-child(3) label,
+.contact-form .form-group:nth-child(3) textarea {
+    display: block; /* Stack label and textarea vertically */
+    width: 100%; /* Ensure full width */
+}
+
+.contact-form .form-group:nth-child(3) label {
+    font-size: 16px; /* Font size for the label */
+}
+
+/* Flexbox layout for the first and second form-groups */
+.contact-form .form-group:nth-child(1),
+.contact-form .form-group:nth-child(2) {
+    display: flex;
+    gap: 30px; /* Space between side-by-side elements */
+}
+
+.contact-form .form-group:nth-child(1) > div,
+.contact-form .form-group:nth-child(2) > div {
+    flex: 1; /* Both input fields will share space equally */
+}
+
+
+.form-group {
+    margin-bottom: 10px;
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Ensure elements wrap on smaller screens */
+}
+
+.form-group label {
+    flex: 1; /* Label takes up as much space as available */
+    font-size: 16px;
+}
+
+.form-group input, .form-group textarea {
+    flex: 10; /* Input fields take up twice as much space as labels */
+    width: 100%; /* Full width within the flex container */
+    padding: 10px;
+    border: 1px solid #491577;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    border-color: #FF00E5;
+    outline: none;
+}
